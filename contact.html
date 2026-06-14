@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Weyston Technology Get in Touch</title>
+
+    <meta name="description" content="联系纬思通科技获取电子产品开发、技术支持和合作机会。多种联系方式：电话、邮箱、微信等。Contact Weyston Technology for electronic product development, technical support, partnership opportunities.">
+
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="联系我们,contact us,联系方式,contact information,联系纬思通,contact Weyston,电话咨询,phone consultation,邮箱咨询,email inquiry,微信咨询,WeChat consultation,在线咨询,online consultation,产品咨询,product inquiry,技术咨询,technical inquiry,合作咨询,partnership inquiry,客户服务,customer service,业务咨询,business inquiry,产品开发咨询,product development inquiry,营业时间,business hours,快速响应,quick response,专业服务,professional service">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="联系纬思通科技 - 专业电子产品开发咨询">
+    <meta property="og:description" content="联系我们获取电子产品开发、技术支持和合作机会，提供多种便捷联系方式">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://weyston.com/contact.html">
+
+    <!-- Structured Data - ContactPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "联系我们",
+      "description": "纬思通科技联系方式和联系信息",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "纬思通科技",
+        "alternateName": "Weyston Technology",
+        "telephone": "+86-157-1077-1604",
+        "email": "inquiry@weyston.com",
+        "openingHours": "Mo-Fr 09:00-18:00",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+86-157-1077-1604",
+            "contactType": "customer service",
+            "email": "inquiry@weyston.com",
+            "availableLanguage": ["Chinese", "English"]
+          },
+          {
+            "@type": "ContactPoint",
+            "email": "sales@weyston.com",
+            "contactType": "sales",
+            "availableLanguage": ["Chinese", "English"]
+          },
+          {
+            "@type": "ContactPoint",
+            "email": "support@weyston.com",
+            "contactType": "technical support",
+            "availableLanguage": ["Chinese", "English"]
+          }
+        ]
+      }
+    }
+    </script>
+
+    <!-- 隐藏SEO内容 -->
+    <div style="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
+        <h2>联系纬思通科技 Weyston Technology - 电子产品解决方案</h2>
+        <p>联系纬思通科技 Weyston Technology AI录音设备 TWS蓝牙耳机 蓝牙音箱 电子烟 产品开发 技术支持</p>
+        <p>产品咨询 技术咨询 方案咨询 开发咨询 AI recording TWS Bluetooth speakers e-cigarette solutions</p>
+        <p>专业客户服务 快速响应 技术支持 产品开发服务 创新解决方案 专业团队</p>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#042454',
+                        secondary: '#fbbf24',
+                        accent: '#374151',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Top notification styles */
+        .top-notification {
+            position: fixed;
+            top: 64px; /* Below the navigation bar */
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            min-width: 300px;
+            max-width: 500px;
+            padding: 16px 24px;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(10px);
+            opacity: 0;
+            transform: translateX(-50%) translateY(-20px);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .top-notification.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .top-notification.success {
+            background: rgba(34, 197, 94, 0.95);
+            color: white;
+            border: 1px solid rgba(34, 197, 94, 0.3);
+        }
+
+        .top-notification.error {
+            background: rgba(239, 68, 68, 0.95);
+            color: white;
+            border: 1px solid rgba(239, 68, 68, 0.3);
+        }
+
+        .top-notification .close-btn {
+            position: absolute;
+            top: 8px;
+            right: 12px;
+            background: none;
+            border: none;
+            color: inherit;
+            font-size: 18px;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.2s;
+        }
+
+        .top-notification .close-btn:hover {
+            opacity: 1;
+        }
+
+        /* Button loading animation */
+        .btn-loading { position: relative; pointer-events: none; }
+        .btn-loading::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 20px;
+            height: 20px;
+            margin: -10px 0 0 -10px;
+            border: 2px solid transparent;
+            border-top: 2px solid currentColor;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        .btn-loading .btn-text { opacity: 0; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+        .form-submitting { opacity: 0.7; pointer-events: none; transition: opacity 0.3s ease; }
+
+        @keyframes checkmark { 0% { transform: scale(0); opacity: 0; } 50% { transform: scale(1.2); opacity: 1; } 100% { transform: scale(1); opacity: 1; } }
+        .success-icon { display: inline-block; margin-right: 8px; animation: checkmark 0.5s ease-in-out; }
+
+        @keyframes shake { 0%, 100% { transform: translateX(-50%) translateY(0); } 25% { transform: translateX(-50%) translateY(0) translateX(-5px); } 75% { transform: translateX(-50%) translateY(0) translateX(5px); } }
+        .top-notification.error.shake { animation: shake 0.5s ease-in-out; }
+
+        /* Menu underline animation */
+        .menu-item {
+            position: relative;
+        }
+
+        .menu-item::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: #042454;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .menu-item:hover::after {
+            width: 100%;
+        }
+
+        .menu-item.active::after {
+            width: 100%;
+        }
+
+        /* Mobile menu left border animation */
+        .mobile-menu-item {
+            position: relative;
+        }
+
+        .mobile-menu-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 0;
+            height: 4px;
+            background-color: #042454;
+            transition: all 0.3s ease;
+            transform: translateY(-50%);
+        }
+
+        .mobile-menu-item:hover::before {
+            width: 4px;
+        }
+
+        .mobile-menu-item.active::before {
+            width: 4px;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Top Notification Container -->
+    <div id="topNotification" class="top-notification">
+        <button class="close-btn" onclick="hideTopNotification()">&times;</button>
+        <div id="notificationContent"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html">
+                        <img src="./public/logo.jpeg" alt="纬思通科技(Weyston Technology) - 专业电子元器件一站式采购服务商，提供Murata 村田、Yageo 国巨、TDK、Taiyo Yuden 太阳诱电 太诱、等品牌电阻、电容、电感、二极管、晶振、连接器等各类电子元器件" class="h-10 w-auto">
+                    </a>
+                    <div class="ml-3">
+                        <div class="text-primary font-bold text-lg">Weyston Technology</div>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="menu-item text-accent hover:text-primary transition-colors">Home</a>
+                    <a href="products.html" class="menu-item text-accent hover:text-primary transition-colors">Products</a>
+                    <a href="solutions.html" class="menu-item text-accent hover:text-primary transition-colors">Solutions</a>
+                    <a href="support.html" class="menu-item text-accent hover:text-primary transition-colors">Support</a>
+                    <a href="about.html" class="menu-item text-accent hover:text-primary transition-colors">About</a>
+                    <a href="contact.html" class="menu-item active text-accent hover:text-primary transition-colors">Contact</a>
+
+                    <!-- Language Toggle -->
+                    <a href="zh/contact.html" class="bg-primary text-white px-3 py-1 rounded-md text-sm hover:bg-accent transition-colors">中文</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobileMenuBtn" class="text-accent hover:text-primary">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="md:hidden hidden bg-white border-t">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="index.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">Home</a>
+                    <a href="products.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">Products</a>
+                    <a href="solutions.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">Solutions</a>
+                    <a href="support.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">Support</a>
+                    <a href="about.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">About</a>
+                    <a href="contact.html" class="mobile-menu-item active block px-3 py-2 text-accent hover:text-primary transition-colors">Contact</a>
+                    <a href="zh/contact.html" class="block w-full text-left px-3 py-2 bg-primary text-white rounded-md mt-2">中文</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="relative text-white py-16 overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="./public/contact-communication-bg.jpg"
+                 alt="Contact Communication Background"
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-gray-900/50 to-gray-800/50"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center relative z-10">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
+                <p class="text-xl opacity-90">Get in touch for product development, technical support, or partnership opportunities</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <!-- Email -->
+                <div class="text-center bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h4 class="font-bold mb-2 text-lg">Email</h4>
+                    <p class="text-accent mb-2">inquiry@weyston.com</p>
+                    <p class="text-sm text-gray-600">For general inquiries and product development</p>
+                </div>
+
+                <!-- Phone -->
+                <div class="text-center bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h4 class="font-bold mb-2 text-lg">Phone</h4>
+                    <p class="text-accent mb-2">0769-2686 3776</p>
+                    <p class="text-sm text-gray-600">For sales, support and partnership inquiries</p>
+                </div>
+
+                <!-- Business Hours -->
+                <div class="text-center bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4 class="font-bold mb-2 text-lg">Business Hours</h4>
+                    <p class="text-accent mb-2">Mon - Fri: 09:00 - 18:00</p>
+                    <p class="text-accent mb-2">Sat: 09:00 - 12:00</p>
+                </div>
+
+                <!-- Address -->
+                <div class="text-center bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h4 class="font-bold mb-2 text-lg">Address</h4>
+                    <p class="text-sm text-gray-600">8F, Building A, Zhengqiangda Technology Park, Tangxia Town, Dongguan, Guangdong, China</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Form -->
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h2 class="text-2xl font-bold text-primary mb-6">Send us a Message</h2>
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">First Name *</label>
+                                <input type="text" name="firstName" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Last Name *</label>
+                                <input type="text" name="lastName" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email *</label>
+                            <input type="email" name="email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Company</label>
+                            <input type="text" name="company" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Phone</label>
+                            <input type="tel" name="phone" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Inquiry Type *</label>
+                            <select name="inquiryType" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
+                                <option value="general">General Inquiry</option>
+                                <option value="quote">Product Development</option>
+                                <option value="support">Technical Support</option>
+                                <option value="job">Job Application</option>
+                                <option value="partnership">Partnership</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Message *</label>
+                            <textarea name="message" rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Please describe your requirements..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-secondary text-primary py-3 px-6 rounded-md hover:bg-yellow-500 transition-colors font-semibold">Send Message</button>
+
+                    </form>
+                </div>
+
+                <!-- Additional Information -->
+                <div class="space-y-8">
+                    <!-- Quick Response -->
+                    <div class="bg-primary text-white rounded-lg p-6">
+                        <h3 class="text-xl font-bold mb-4">Quick Response Guarantee</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-clock mr-2"></i>
+                                <span>Email inquiries: Within 12 hours</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-phone mr-2"></i>
+                                <span>Phone calls: Immediate response</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Languages -->
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-primary mb-4">Languages Supported</h3>
+                        <div class="grid grid-cols-2 gap-2 text-accent">
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>English</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Chinese</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-primary mb-4">Our Services</h2>
+                <p class="text-lg text-accent">Comprehensive electronic product development and support services</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Product Development</h3>
+                    <p class="text-accent">From concept to production-ready solutions</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Technical Support</h3>
+                    <p class="text-accent">Pre-sales consultation and post-sales tracking</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Partnership</h3>
+                    <p class="text-accent">Long-term strategic cooperation opportunities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-accent text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <img src="./public/logo.jpeg" alt="Weyston Technology" class="h-8 w-auto mr-3">
+                    <div>
+                        <div class="font-bold">Weyston Technology</div>
+                        <div class="text-sm opacity-75">Professional Electronics Solutions Provider</div>
+                    </div>
+                </div>
+                <div class="text-sm opacity-75">
+                    <span>© 2024 Weyston Technology. All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/common.js"></script>
+    <script src="src/js/emailConfig.js"></script>
+    <script src="src/js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技术支持 - 纬思通科技专家协助</title>
+
+    <meta name="description" content="专业技术支持服务：产品开发指导、技术咨询、方案设计、售前售后支持等全方位技术协助服务。">
+
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="技术支持,专家协助,产品开发,技术咨询,方案设计,应用设计,技术规格,性能优化,质量保证,产品测试,技术培训,售前支持,售后服务,客户服务,多语言服务,AI录音技术,TWS技术,蓝牙技术,电子烟技术">
+
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="技术支持服务 - 纬思通科技专业技术协助">
+    <meta property="og:description" content="提供全方位技术支持服务：产品开发指导、技术咨询、方案设计、售前售后支持等专业技术协助">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://weyston.com/zh/support.html">
+
+    <!-- Structured Data - Service -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "技术支持服务",
+      "description": "专业的电子产品开发技术支持和客户服务",
+      "provider": {
+        "@type": "Organization",
+        "name": "纬思通科技"
+      },
+      "serviceType": "技术支持",
+      "areaServed": "全球",
+      "availableLanguage": ["中文", "English"],
+      "hoursAvailable": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    }
+    </script>
+
+    <!-- 隐藏SEO内容 -->
+    <div style="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
+        <h2>技术支持 - 纬思通科技 电子产品技术服务</h2>
+        <p>纬思通科技 技术支持 产品开发 技术咨询 方案设计 AI录音 TWS蓝牙 电子烟技术</p>
+        <p>产品开发支持 技术咨询 方案设计 应用支持 售前支持 售后服务 专业团队</p>
+        <p>专业技术团队 产品工程师 设计支持 质量保证 测试服务 技术培训 创新解决方案</p>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#042454',
+                        secondary: '#fbbf24',
+                        accent: '#374151',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Menu underline animation */
+        .menu-item {
+            position: relative;
+        }
+
+        .menu-item::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: #042454;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .menu-item:hover::after {
+            width: 100%;
+        }
+
+        .menu-item.active::after {
+            width: 100%;
+        }
+
+        /* Mobile menu left border animation */
+        .mobile-menu-item {
+            position: relative;
+        }
+
+        .mobile-menu-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 0;
+            height: 4px;
+            background-color: #042454;
+            transition: all 0.3s ease;
+            transform: translateY(-50%);
+        }
+
+        .mobile-menu-item:hover::before {
+            width: 4px;
+        }
+
+        .mobile-menu-item.active::before {
+            width: 4px;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html">
+                        <img src="../public/logo.jpeg" alt="纬思通科技" class="h-10 w-auto">
+                    </a>
+                    <div class="ml-3">
+                        <div class="text-primary font-bold text-lg">纬思通科技</div>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="menu-item text-accent hover:text-primary transition-colors">首页</a>
+                    <a href="products.html" class="menu-item text-accent hover:text-primary transition-colors">产品</a>
+                    <a href="solutions.html" class="menu-item text-accent hover:text-primary transition-colors">方案</a>
+                    <a href="support.html" class="menu-item active text-accent hover:text-primary transition-colors">技术支持</a>
+                    <a href="about.html" class="menu-item text-accent hover:text-primary transition-colors">关于我们</a>
+                    <a href="contact.html" class="menu-item text-accent hover:text-primary transition-colors">联系我们</a>
+
+                    <!-- Language Toggle -->
+                    <a href="../support.html" class="bg-primary text-white px-3 py-1 rounded-md text-sm hover:bg-accent transition-colors">
+                        EN
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobileMenuBtn" class="text-accent hover:text-primary">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="md:hidden hidden bg-white border-t">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="index.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">首页</a>
+                    <a href="products.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">产品</a>
+                    <a href="solutions.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">方案</a>
+                    <a href="support.html" class="mobile-menu-item active block px-3 py-2 text-accent hover:text-primary transition-colors">技术支持</a>
+                    <a href="about.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">关于我们</a>
+                    <a href="contact.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">联系我们</a>
+                    <a href="../support.html" class="block w-full text-left px-3 py-2 bg-primary text-white rounded-md mt-2">
+                        EN
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="relative text-white py-16 overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="../public/support-technical-bg.jpg"
+                 alt="技术支持背景"
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-gray-900/50 to-gray-800/50"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center relative z-10">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">技术支持</h1>
+                <p class="text-xl opacity-90">专业产品开发协助和全面技术支持服务</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Services -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product Development Support -->
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">产品开发支持</h3>
+                    <p class="text-accent mb-4">在产品设计、方案开发和技术规格方面提供专家指导</p>
+                    <ul class="text-sm text-gray-600">
+                        <li>• 产品设计指导</li>
+                        <li>• 方案开发支持</li>
+                        <li>• 技术规格审查</li>
+                        <li>• 性能优化</li>
+                    </ul>
+                </div>
+
+                <!-- Quality Assurance -->
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">质量保证</h3>
+                    <p class="text-accent mb-4">全面的质量控制和测试服务，确保产品可靠性</p>
+                    <ul class="text-sm text-gray-600">
+                        <li>• 产品质量控制</li>
+                        <li>• 性能测试服务</li>
+                        <li>• 可靠性验证</li>
+                        <li>• 失效分析</li>
+                    </ul>
+                </div>
+
+                <!-- Solution Design -->
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">方案设计</h3>
+                    <p class="text-accent mb-4">全面的方案设计服务，包括架构规划和系统优化</p>
+                    <ul class="text-sm text-gray-600">
+                        <li>• 系统架构设计</li>
+                        <li>• 主控方案规划</li>
+                        <li>• 性能优化</li>
+                        <li>• 成本优化</li>
+                    </ul>
+                </div>
+
+                <!-- Documentation & Compliance -->
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">文档与合规</h3>
+                    <p class="text-accent mb-4">完整的技术文档和产品合规协助</p>
+                    <ul class="text-sm text-gray-600">
+                        <li>• 技术文档</li>
+                        <li>• 产品规格书</li>
+                        <li>• 认证支持</li>
+                        <li>• 法规合规</li>
+                    </ul>
+                </div>
+
+                <!-- Training & Education -->
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">培训与教育</h3>
+                    <p class="text-accent mb-4">教育资源和培训项目，提升产品开发知识</p>
+                    <ul class="text-sm text-gray-600">
+                        <li>• 技术网络研讨会</li>
+                        <li>• 产品培训</li>
+                        <li>• 开发指南</li>
+                        <li>• 最佳实践指南</li>
+                    </ul>
+                </div>
+
+                <!-- Customer Support -->
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">客户支持</h3>
+                    <p class="text-accent mb-4">产品开发和技术协助的全面客户支持</p>
+                    <ul class="text-sm text-gray-600">
+                        <li>• 售前咨询</li>
+                        <li>• 售后跟踪</li>
+                        <li>• 多语言服务</li>
+                        <li>• 专属客户经理</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Process -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">我们的支持流程</h2>
+                <p class="text-lg text-accent">我们如何确保您获得最佳技术支持</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
+                    <h3 class="text-lg font-bold mb-2">需求分析</h3>
+                    <p class="text-gray-600">了解您的需求和挑战</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
+                    <h3 class="text-lg font-bold mb-2">方案设计</h3>
+                    <p class="text-gray-600">详细分析和解决方案开发</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
+                    <h3 class="text-lg font-bold mb-2">开发</h3>
+                    <p class="text-gray-600">产品开发并提供持续技术支持</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">4</div>
+                    <h3 class="text-lg font-bold mb-2">支持与优化</h3>
+                    <p class="text-gray-600">持续支持和产品优化</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-primary text-white rounded-lg p-8 text-center">
+                <h3 class="text-2xl font-bold mb-4">需要技术支持？</h3>
+                <p class="mb-6 opacity-90">我们的技术专家随时准备协助您解决产品开发和技术挑战</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="solutions.html" class="bg-secondary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-colors inline-block">查看方案</a>
+                    <a href="contact.html" class="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block">联系我们</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-accent text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <img src="../public/logo.jpeg" alt="纬思通科技" class="h-8 w-auto mr-3">
+                    <div>
+                        <div class="font-bold">纬思通科技</div>
+                        <div class="text-sm opacity-75">专业电子产品解决方案供应商</div>
+                    </div>
+                </div>
+                <div class="text-sm opacity-75">
+                    <span>© 2024 纬思通科技。保留所有权利。</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/common.js"></script>
+</body>
+</html>

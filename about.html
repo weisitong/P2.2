@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Weyston Technology Company Profile</title>
+
+    <meta name="description" content="了解纬思通科技，专业的电子产品解决方案提供商，专注于AI录音设备、TWS蓝牙耳机、蓝牙音箱、电子烟等产品的研发与技术支持。Learn about Weyston Technology, professional electronics solutions provider.">
+
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="纬思通科技,Weyston Technology,公司简介,company profile,电子产品解决方案,electronics solutions,AI录音设备,AI recording device,TWS蓝牙耳机,TWS Bluetooth earphones,蓝牙音箱,Bluetooth speakers,电子烟,e-cigarette,产品开发,product development,技术支持,technical support,专业团队,professional team,行业经验,industry experience,客户服务,customer service,创新技术,innovative technology,电子公司,electronics company">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="关于纬思通科技 - 专业电子产品解决方案供应商">
+    <meta property="og:description" content="专业的电子产品解决方案提供商，专注于AI录音设备、TWS蓝牙耳机、蓝牙音箱、电子烟等产品的研发与技术支持">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://weyston.com/about.html">
+
+    <!-- Structured Data - About Page -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "关于纬思通科技",
+      "description": "纬思通科技公司简介和企业信息",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "纬思通科技",
+        "alternateName": "Weyston Technology",
+        "description": "专业电子产品解决方案供应商，专注于AI录音设备、TWS蓝牙耳机、蓝牙音箱、电子烟等产品的研发与技术支持",
+        "foundingDate": "2020",
+        "numberOfEmployees": "10-50",
+        "industry": "电子产品解决方案",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+86-157-1077-1604",
+          "email": "inquiry@weyston.com",
+          "contactType": "customer service"
+        }
+      }
+    }
+    </script>
+
+    <!-- 隐藏SEO内容 -->
+    <div style="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
+        <h2>关于纬思通科技 Weyston Technology - 专业电子产品解决方案供应商</h2>
+        <p>纬思通科技 Weyston Technology 专业电子产品解决方案 AI录音设备 TWS蓝牙耳机 蓝牙音箱 电子烟 产品开发 技术支持</p>
+        <p>AI recording device TWS Bluetooth earphones Bluetooth speakers e-cigarette solutions 创新技术 专业团队 技术支持 产品方案</p>
+        <p>电子产品开发 音频技术 录音技术 无线技术 电子烟技术 专业技术支持 创新解决方案 产品设计</p>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#042454',
+                        secondary: '#fbbf24',
+                        accent: '#374151',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Menu underline animation */
+        .menu-item {
+            position: relative;
+        }
+
+        .menu-item::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: #042454;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .menu-item:hover::after {
+            width: 100%;
+        }
+
+        .menu-item.active::after {
+            width: 100%;
+        }
+
+        /* Mobile menu left border animation */
+        .mobile-menu-item {
+            position: relative;
+        }
+
+        .mobile-menu-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 0;
+            height: 4px;
+            background-color: #042454;
+            transition: all 0.3s ease;
+            transform: translateY(-50%);
+        }
+
+        .mobile-menu-item:hover::before {
+            width: 4px;
+        }
+
+        .mobile-menu-item.active::before {
+            width: 4px;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html">
+                        <img src="./public/logo.jpeg" alt="纬思通科技(Weyston Technology) - 专业电子元器件一站式采购服务商，提供Murata 村田、Yageo 国巨、TDK、Taiyo Yuden 太阳诱电 太诱、等品牌电阻、电容、电感、二极管、晶振、连接器等各类电子元器件" class="h-10 w-auto">
+                    </a>
+                    <div class="ml-3">
+                        <div class="text-primary font-bold text-lg">Weyston Technology</div>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="menu-item text-accent hover:text-primary transition-colors">Home</a>
+                    <a href="products.html" class="menu-item text-accent hover:text-primary transition-colors">Products</a>
+                    <a href="solutions.html" class="menu-item text-accent hover:text-primary transition-colors">Solutions</a>
+                    <a href="support.html" class="menu-item text-accent hover:text-primary transition-colors">Support</a>
+                    <a href="about.html" class="menu-item active text-accent hover:text-primary transition-colors">About</a>
+                    <a href="contact.html" class="menu-item text-accent hover:text-primary transition-colors">Contact</a>
+
+                    <!-- Language Toggle -->
+                    <a href="zh/about.html" class="bg-primary text-white px-3 py-1 rounded-md text-sm hover:bg-accent transition-colors">中文</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobileMenuBtn" class="text-accent hover:text-primary">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="md:hidden hidden bg-white border-t">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="index.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">Home</a>
+                    <a href="products.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">Products</a>
+                    <a href="solutions.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">Solutions</a>
+                    <a href="support.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">Support</a>
+                    <a href="about.html" class="mobile-menu-item active block px-3 py-2 text-accent hover:text-primary transition-colors">About</a>
+                    <a href="contact.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">Contact</a>
+                    <a href="zh/about.html" class="block w-full text-left px-3 py-2 bg-primary text-white rounded-md mt-2">中文</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="relative text-white py-16 overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="./public/about-team-bg.jpg"
+                 alt="Professional Team Background"
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-gray-900/50 to-gray-800/50"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center relative z-10">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">About Weyston Technology</h1>
+                <p class="text-xl opacity-90">Your trusted partner in electronic solutions development</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Overview -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Our Story</h2>
+                    <p class="text-lg text-accent mb-6">With years of expertise in electronic product development, Weyston Technology has established itself as a trusted partner for innovative electronic solutions. We specialize in AI recording devices, TWS Bluetooth earphones, Bluetooth speakers, and e-cigarette technology with comprehensive technical support.</p>
+
+                    <p class="text-accent mb-8">Our commitment to innovation, combined with our experienced technical team, enables us to deliver cutting-edge solutions, comprehensive product development, and exceptional technical support to our clients across various industries.</p>
+                </div>
+
+                <div class="text-center">
+                    <img src="/reception.jpg"
+                         alt="Weyston Technology Reception"
+                         class="w-full rounded-lg shadow-lg object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Our Values</h2>
+                <p class="text-lg text-accent">The principles that guide everything we do</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Innovation First</h3>
+                    <p class="text-accent">We never compromise on innovation and technology advancement</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Customer Focus</h3>
+                    <p class="text-accent">Your success is our primary objective</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Technical Excellence</h3>
+                    <p class="text-accent">Continuously improving our technical capabilities and solutions</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Integrity</h3>
+                    <p class="text-accent">Honest and transparent in all our dealings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Why Choose Weyston Technology</h2>
+                <p class="text-lg text-accent">The advantages that set us apart in the industry</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="flex items-start">
+                    <div class="text-secondary text-3xl mr-4 mt-1">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Advanced Technology</h4>
+                        <p class="text-accent">Cutting-edge AI and wireless technologies with comprehensive development processes</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div class="text-secondary text-3xl mr-4 mt-1">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Fast Development</h4>
+                        <p class="text-accent">Rapid prototyping and development cycles ensuring timely project delivery</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div class="text-secondary text-3xl mr-4 mt-1">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Expert Support</h4>
+                        <p class="text-accent">Technical expertise and customer service excellence with comprehensive pre-sales and post-sales support</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div class="text-secondary text-3xl mr-4 mt-1">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Market Leadership</h4>
+                        <p class="text-accent">Industry-leading solutions through innovative technology and strategic partnerships</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div class="text-secondary text-3xl mr-4 mt-1">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Experienced Team</h4>
+                        <p class="text-accent">Seasoned professionals with deep industry knowledge and technical expertise</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div class="text-secondary text-3xl mr-4 mt-1">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Custom Solutions</h4>
+                        <p class="text-accent">Tailored product development solutions designed to meet your specific technical requirements</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Stats -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Our Achievements</h2>
+                <p class="text-lg opacity-90">Numbers that reflect our commitment to excellence</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold text-secondary mb-2">100+</div>
+                    <div class="text-lg">Successful Projects</div>
+                </div>
+
+                <div>
+                    <div class="text-4xl font-bold text-secondary mb-2">50+</div>
+                    <div class="text-lg">Product Solutions</div>
+                </div>
+
+                <div>
+                    <div class="text-4xl font-bold text-secondary mb-2">99.9%</div>
+                    <div class="text-lg">Success Rate</div>
+                </div>
+
+                <div>
+                    <div class="text-4xl font-bold text-secondary mb-2">5+</div>
+                    <div class="text-lg">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-primary mb-4">Ready to Partner with Us?</h2>
+            <p class="text-lg text-accent mb-8">Join our satisfied clients who trust Weyston Technology for their electronic product development needs</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-primary text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-accent transition-colors inline-block">Contact Us Today</a>
+                <a href="solutions.html" class="bg-secondary text-primary px-8 py-3 rounded-lg text-lg font-semibold hover:bg-yellow-500 transition-colors inline-block">View Solutions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-accent text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <img src="./public/logo.jpeg" alt="Weyston Technology" class="h-8 w-auto mr-3">
+                    <div>
+                        <div class="font-bold">Weyston Technology</div>
+                        <div class="text-sm opacity-75">Professional Electronics Solutions Provider</div>
+                    </div>
+                </div>
+                <div class="text-sm opacity-75">
+                    <span>© 2024 Weyston Technology. All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>方案 - 纬思通科技产品方案</title>
+
+    <meta name="description" content="AI录音设备、TWS蓝牙耳机、蓝牙音箱、电子烟技术综合产品方案和开发方案。专业主控方案和技术支持。">
+
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="产品方案,主控方案,AI录音方案,TWS方案,蓝牙方案,电子烟方案,开发方案,技术解决方案,产品开发,电子解决方案">
+
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="产品方案 - 纬思通科技开发方案">
+    <meta property="og:description" content="专业产品方案和主控方案，包括AI录音、无线音频、电子烟技术">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://weyston.com/zh/solutions.html">
+
+    <!-- Structured Data - Service -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "产品方案",
+      "description": "电子产品综合产品开发方案和主控方案",
+      "provider": {
+        "@type": "Organization",
+        "name": "纬思通科技"
+      },
+      "serviceType": "产品开发方案",
+      "areaServed": "全球",
+      "availableLanguage": ["中文", "English"]
+    }
+    </script>
+
+    <!-- 隐藏SEO内容 -->
+    <div style="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
+        <h2>产品方案 - 纬思通科技 专业解决方案</h2>
+        <p>产品方案 主控方案 AI录音方案 TWS方案 蓝牙方案 电子烟方案 开发方案 技术解决方案</p>
+        <p>纬思通科技 专业产品开发方案 主控芯片方案 技术解决方案 产品设计 方案开发 技术支持</p>
+        <p>电子产品方案 音频方案 录音方案 无线方案 电子烟方案 主控方案 芯片方案 技术方案</p>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#042454',
+                        secondary: '#fbbf24',
+                        accent: '#374151',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Menu underline animation */
+        .menu-item {
+            position: relative;
+        }
+
+        .menu-item::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: #042454;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .menu-item:hover::after {
+            width: 100%;
+        }
+
+        .menu-item.active::after {
+            width: 100%;
+        }
+
+        /* Mobile menu left border animation */
+        .mobile-menu-item {
+            position: relative;
+        }
+
+        .mobile-menu-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 0;
+            height: 4px;
+            background-color: #042454;
+            transition: all 0.3s ease;
+            transform: translateY(-50%);
+        }
+
+        .mobile-menu-item:hover::before {
+            width: 4px;
+        }
+
+        .mobile-menu-item.active::before {
+            width: 4px;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html">
+                        <img src="../public/logo.jpeg" alt="纬思通科技" class="h-10 w-auto">
+                    </a>
+                    <div class="ml-3">
+                        <div class="text-primary font-bold text-lg">纬思通科技</div>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="menu-item text-accent hover:text-primary transition-colors">首页</a>
+                    <a href="products.html" class="menu-item text-accent hover:text-primary transition-colors">产品</a>
+                    <a href="solutions.html" class="menu-item active text-accent hover:text-primary transition-colors">方案</a>
+                    <a href="support.html" class="menu-item text-accent hover:text-primary transition-colors">技术支持</a>
+                    <a href="about.html" class="menu-item text-accent hover:text-primary transition-colors">关于我们</a>
+                    <a href="contact.html" class="menu-item text-accent hover:text-primary transition-colors">联系我们</a>
+
+                    <!-- Language Toggle -->
+                    <a href="../solutions.html" class="bg-primary text-white px-3 py-1 rounded-md text-sm hover:bg-accent transition-colors">
+                        EN
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobileMenuBtn" class="text-accent hover:text-primary">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="md:hidden hidden bg-white border-t">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="index.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">首页</a>
+                    <a href="products.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">产品</a>
+                    <a href="solutions.html" class="mobile-menu-item active block px-3 py-2 text-accent hover:text-primary transition-colors">方案</a>
+                    <a href="support.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">技术支持</a>
+                    <a href="about.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">关于我们</a>
+                    <a href="contact.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">联系我们</a>
+                    <a href="../solutions.html" class="block w-full text-left px-3 py-2 bg-primary text-white rounded-md mt-2">
+                        EN
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="relative text-white py-16 overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="../public/partners-business-bg.jpg"
+                 alt="技术方案背景"
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-gray-900/50 to-gray-800/50"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center relative z-10">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">产品方案</h1>
+                <p class="text-xl opacity-90">创新电子产品的全面开发方案和主控解决方案</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Overview -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">我们的方案类别</h2>
+                <p class="text-lg text-accent">各类电子产品的专业主控解决方案和开发方案</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- AI Recording Solutions -->
+                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
+                    <div class="flex items-center mb-6">
+                        <div class="text-primary text-4xl mr-4">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary">AI录音解决方案</h3>
+                            <p class="text-accent">智能录音设备的先进主控方案</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-blue-500 pl-4">
+                            <h4 class="font-bold text-gray-800">基于ARM Cortex-M4的解决方案</h4>
+                            <p class="text-sm text-gray-600">具备DSP功能的高性能音频处理</p>
+                        </div>
+
+                        <div class="border-l-4 border-purple-500 pl-4">
+                            <h4 class="font-bold text-gray-800">AI芯片集成</h4>
+                            <p class="text-sm text-gray-600">用于实时音频增强的神经处理单元</p>
+                        </div>
+
+                        <div class="border-l-4 border-green-500 pl-4">
+                            <h4 class="font-bold text-gray-800">低功耗设计</h4>
+                            <p class="text-sm text-gray-600">智能电源管理实现超长续航</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TWS Audio Solutions -->
+                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
+                    <div class="flex items-center mb-6">
+                        <div class="text-primary text-4xl mr-4">
+                            <i class="fas fa-headphones"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary">TWS音频解决方案</h3>
+                            <p class="text-accent">完整的无线音频系统开发</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-blue-500 pl-4">
+                            <h4 class="font-bold text-gray-800">高通QCC系列</h4>
+                            <p class="text-sm text-gray-600">行业领先的蓝牙音频SoC解决方案</p>
+                        </div>
+
+                        <div class="border-l-4 border-teal-500 pl-4">
+                            <h4 class="font-bold text-gray-800">瑞昱RTL系列</h4>
+                            <p class="text-sm text-gray-600">具备优秀音质的成本效益解决方案</p>
+                        </div>
+
+                        <div class="border-l-4 border-orange-500 pl-4">
+                            <h4 class="font-bold text-gray-800">定制音频调优</h4>
+                            <p class="text-sm text-gray-600">个性化声音配置和EQ优化</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bluetooth Speaker Solutions -->
+                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
+                    <div class="flex items-center mb-6">
+                        <div class="text-primary text-4xl mr-4">
+                            <i class="fas fa-volume-up"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary">蓝牙音箱解决方案</h3>
+                            <p class="text-accent">高保真无线音箱开发</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-red-500 pl-4">
+                            <h4 class="font-bold text-gray-800">多驱动器系统</h4>
+                            <p class="text-sm text-gray-600">先进的分频器设计和驱动器管理</p>
+                        </div>
+
+                        <div class="border-l-4 border-yellow-500 pl-4">
+                            <h4 class="font-bold text-gray-800">DSP音频处理</h4>
+                            <p class="text-sm text-gray-600">实时音频增强和房间校正</p>
+                        </div>
+
+                        <div class="border-l-4 border-indigo-500 pl-4">
+                            <h4 class="font-bold text-gray-800">智能连接</h4>
+                            <p class="text-sm text-gray-600">多设备配对和语音助手集成</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- E-Cigarette Solutions -->
+                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
+                    <div class="flex items-center mb-6">
+                        <div class="text-primary text-4xl mr-4">
+                            <i class="fas fa-microprocessor"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary">电子烟解决方案</h3>
+                            <p class="text-accent">安全智能的电子烟技术</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-gray-500 pl-4">
+                            <h4 class="font-bold text-gray-800">温控主控</h4>
+                            <p class="text-sm text-gray-600">精确的温度监控和控制系统</p>
+                        </div>
+
+                        <div class="border-l-4 border-pink-500 pl-4">
+                            <h4 class="font-bold text-gray-800">安全保护</h4>
+                            <p class="text-sm text-gray-600">包括过热和短路保护在内的多重安全功能</p>
+                        </div>
+
+                        <div class="border-l-4 border-cyan-500 pl-4">
+                            <h4 class="font-bold text-gray-800">智能功能</h4>
+                            <p class="text-sm text-gray-600">应用连接和使用跟踪功能</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Process -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">开发流程</h2>
+                <p class="text-lg text-accent">我们系统化的产品方案开发方法</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
+                    <h3 class="text-lg font-bold mb-2">需求分析</h3>
+                    <p class="text-gray-600">了解客户需求和技术规格</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
+                    <h3 class="text-lg font-bold mb-2">方案设计</h3>
+                    <p class="text-gray-600">创建最优的主控和系统架构</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
+                    <h3 class="text-lg font-bold mb-2">原型开发</h3>
+                    <p class="text-gray-600">构建和测试功能原型</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">4</div>
+                    <h3 class="text-lg font-bold mb-2">生产支持</h3>
+                    <p class="text-gray-600">在制造和部署过程中提供持续支持</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Partners -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">技术合作伙伴</h2>
+                <p class="text-lg text-accent">我们合作的领先半导体和技术公司</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
+                <div class="text-center p-4 bg-gray-50 rounded-lg">
+                    <div class="text-2xl font-bold text-primary">Qualcomm</div>
+                    <p class="text-xs text-gray-600">音频芯片</p>
+                </div>
+
+                <div class="text-center p-4 bg-gray-50 rounded-lg">
+                    <div class="text-2xl font-bold text-primary">Realtek</div>
+                    <p class="text-xs text-gray-600">无线音频</p>
+                </div>
+
+                <div class="text-center p-4 bg-gray-50 rounded-lg">
+                    <div class="text-2xl font-bold text-primary">ARM</div>
+                    <p class="text-xs text-gray-600">主控内核</p>
+                </div>
+
+                <div class="text-center p-4 bg-gray-50 rounded-lg">
+                    <div class="text-2xl font-bold text-primary">STM32</div>
+                    <p class="text-xs text-gray-600">微控制器</p>
+                </div>
+
+                <div class="text-center p-4 bg-gray-50 rounded-lg">
+                    <div class="text-2xl font-bold text-primary">Nordic</div>
+                    <p class="text-xs text-gray-600">低功耗蓝牙</p>
+                </div>
+
+                <div class="text-center p-4 bg-gray-50 rounded-lg">
+                    <div class="text-2xl font-bold text-primary">Espressif</div>
+                    <p class="text-xs text-gray-600">物联网方案</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">准备开发您的解决方案？</h2>
+            <p class="text-lg mb-8 opacity-90">联系我们的技术团队讨论您的产品开发需求，探索我们全面的解决方案</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-secondary text-primary px-8 py-3 rounded-lg text-lg font-semibold hover:bg-yellow-500 transition-colors inline-block">联系我们</a>
+                <a href="support.html" class="bg-white text-primary px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors inline-block">技术支持</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-accent text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <img src="../public/logo.jpeg" alt="纬思通科技" class="h-8 w-auto mr-3">
+                    <div>
+                        <div class="font-bold">纬思通科技</div>
+                        <div class="text-sm opacity-75">专业电子产品解决方案供应商</div>
+                    </div>
+                </div>
+                <div class="text-sm opacity-75">
+                    <span>© 2024 纬思通科技。保留所有权利。</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Support - Weyston Technology Expert Assistance</title>
+
+    <meta name="description" content="专业技术支持服务：产品开发指导、技术咨询、方案设计、售前售后支持等全方位技术协助服务。Professional technical support including product development guidance, technical consultation, solution design.">
+
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="技术支持,technical support,专家协助,expert assistance,产品开发,product development,技术咨询,technical consultation,方案设计,solution design,应用设计,application design,技术规格,technical specifications,性能优化,performance optimization,质量保证,quality assurance,产品测试,product testing,技术培训,technical training,售前支持,pre-sales support,售后服务,after-sales service,客户服务,customer service,多语言服务,multilingual service,AI录音技术,AI recording technology,TWS技术,TWS technology,蓝牙技术,Bluetooth technology,电子烟技术,e-cigarette technology">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="技术支持服务 - 纬思通科技专业技术协助">
+    <meta property="og:description" content="提供全方位技术支持服务：产品开发指导、技术咨询、方案设计、售前售后支持等专业技术协助">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://weyston.com/support.html">
+
+    <!-- Structured Data - Service -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "技术支持服务",
+      "alternateName": "Technical Support Services",
+      "description": "专业的电子产品开发技术支持和客户服务",
+      "provider": {
+        "@type": "Organization",
+        "name": "纬思通科技",
+        "alternateName": "Weyston Technology"
+      },
+      "serviceType": "技术支持",
+      "areaServed": "全球",
+      "availableLanguage": ["Chinese", "English"],
+      "hoursAvailable": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    }
+    </script>
+
+    <!-- 隐藏SEO内容 -->
+    <div style="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
+        <h2>技术支持 - 纬思通科技 Weyston Technology 电子产品技术服务</h2>
+        <p>纬思通科技 Weyston Technology 技术支持 产品开发 技术咨询 方案设计 AI录音 TWS蓝牙 电子烟技术</p>
+        <p>产品开发支持 技术咨询 方案设计 应用支持 售前支持 售后服务 专业团队</p>
+        <p>专业技术团队 产品工程师 设计支持 质量保证 测试服务 技术培训 创新解决方案</p>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#042454',
+                        secondary: '#fbbf24',
+                        accent: '#374151',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Menu underline animation */
+        .menu-item {
+            position: relative;
+        }
+
+        .menu-item::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: #042454;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .menu-item:hover::after {
+            width: 100%;
+        }
+
+        .menu-item.active::after {
+            width: 100%;
+        }
+
+        /* Mobile menu left border animation */
+        .mobile-menu-item {
+            position: relative;
+        }
+
+        .mobile-menu-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 0;
+            height: 4px;
+            background-color: #042454;
+            transition: all 0.3s ease;
+            transform: translateY(-50%);
+        }
+
+        .mobile-menu-item:hover::before {
+            width: 4px;
+        }
+
+        .mobile-menu-item.active::before {
+            width: 4px;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html">
+                        <img src="./public/logo.jpeg" alt="纬思通科技(Weyston Technology) - 专业电子元器件一站式采购服务商，提供Murata 村田、Yageo 国巨、TDK、Taiyo Yuden 太阳诱电 太诱、等品牌电阻、电容、电感、二极管、晶振、连接器等各类电子元器件" class="h-10 w-auto">
+                    </a>
+                    <div class="ml-3">
+                        <div class="text-primary font-bold text-lg">Weyston Technology</div>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="menu-item text-accent hover:text-primary transition-colors">Home</a>
+                    <a href="products.html" class="menu-item text-accent hover:text-primary transition-colors">Products</a>
+                    <a href="solutions.html" class="menu-item text-accent hover:text-primary transition-colors">Solutions</a>
+                    <a href="support.html" class="menu-item active text-accent hover:text-primary transition-colors">Support</a>
+                    <a href="about.html" class="menu-item text-accent hover:text-primary transition-colors">About</a>
+                    <a href="contact.html" class="menu-item text-accent hover:text-primary transition-colors">Contact</a>
+
+                    <!-- Language Toggle -->
+                    <a href="zh/support.html" class="bg-primary text-white px-3 py-1 rounded-md text-sm hover:bg-accent transition-colors">中文</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobileMenuBtn" class="text-accent hover:text-primary">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="md:hidden hidden bg-white border-t">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="index.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">Home</a>
+                    <a href="products.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">Products</a>
+                    <a href="solutions.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">Solutions</a>
+                    <a href="support.html" class="mobile-menu-item active block px-3 py-2 text-accent hover:text-primary transition-colors">Support</a>
+                    <a href="about.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">About</a>
+                    <a href="contact.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">Contact</a>
+                    <a href="zh/support.html" class="block w-full text-left px-3 py-2 bg-primary text-white rounded-md mt-2">中文</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="relative text-white py-16 overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="./public/support-technical-bg.jpg"
+                 alt="Technical Support Background"
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-gray-900/50 to-gray-800/50"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center relative z-10">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Technical Support</h1>
+                <p class="text-xl opacity-90">Professional product development assistance and comprehensive technical support services</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Services -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product Development Support -->
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Product Development Support</h3>
+                    <p class="text-accent mb-4">Expert guidance on product design, solution development, and technical specifications</p>
+                    <ul class="text-sm text-gray-600">
+                        <li>• Product Design Guidance</li>
+                        <li>• Solution Development Support</li>
+                        <li>• Technical Specifications Review</li>
+                        <li>• Performance Optimization</li>
+                    </ul>
+                </div>
+
+                <!-- Quality Assurance -->
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Quality Assurance</h3>
+                    <p class="text-accent mb-4">Comprehensive quality control and testing services to ensure product reliability</p>
+                    <ul class="text-sm text-gray-600">
+                        <li>• Product Quality Control</li>
+                        <li>• Performance Testing Services</li>
+                        <li>• Reliability Verification</li>
+                        <li>• Failure Analysis</li>
+                    </ul>
+                </div>
+
+                <!-- Solution Design -->
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Solution Design</h3>
+                    <p class="text-accent mb-4">Comprehensive solution design services including architecture planning and system optimization</p>
+                    <ul class="text-sm text-gray-600">
+                        <li>• System Architecture Design</li>
+                        <li>• MCU Solution Planning</li>
+                        <li>• Performance Optimization</li>
+                        <li>• Cost Optimization</li>
+                    </ul>
+                </div>
+
+                <!-- Documentation & Compliance -->
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Documentation & Compliance</h3>
+                    <p class="text-accent mb-4">Complete technical documentation and product compliance assistance</p>
+                    <ul class="text-sm text-gray-600">
+                        <li>• Technical Documentation</li>
+                        <li>• Product Specifications</li>
+                        <li>• Certification Support</li>
+                        <li>• Regulatory Compliance</li>
+                    </ul>
+                </div>
+
+                <!-- Training & Education -->
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Training & Education</h3>
+                    <p class="text-accent mb-4">Educational resources and training programs to enhance product development knowledge</p>
+                    <ul class="text-sm text-gray-600">
+                        <li>• Technical Webinars</li>
+                        <li>• Product Training</li>
+                        <li>• Development Guides</li>
+                        <li>• Best Practices Guide</li>
+                    </ul>
+                </div>
+
+                <!-- Customer Support -->
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Customer Support</h3>
+                    <p class="text-accent mb-4">Comprehensive customer support for product development and technical assistance</p>
+                    <ul class="text-sm text-gray-600">
+                        <li>• Pre-sales Consultation</li>
+                        <li>• Post-sales Tracking</li>
+                        <li>• Multi-language Service</li>
+                        <li>• Dedicated Account Manager</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Process -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Our Support Process</h2>
+                <p class="text-lg text-accent">How we ensure you get the best technical support</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
+                    <h3 class="text-lg font-bold mb-2">Requirements Analysis</h3>
+                    <p class="text-gray-600">Understanding your requirements and challenges</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
+                    <h3 class="text-lg font-bold mb-2">Solution Design</h3>
+                    <p class="text-gray-600">Detailed analysis and solution development</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
+                    <h3 class="text-lg font-bold mb-2">Development</h3>
+                    <p class="text-gray-600">Product development with ongoing technical support</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">4</div>
+                    <h3 class="text-lg font-bold mb-2">Support & Optimization</h3>
+                    <p class="text-gray-600">Continuous support and product optimization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-primary text-white rounded-lg p-8 text-center">
+                <h3 class="text-2xl font-bold mb-4">Need Technical Support?</h3>
+                <p class="mb-6 opacity-90">Our technical experts are ready to assist you with product development and technical challenges</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="solutions.html" class="bg-secondary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-colors inline-block">View Solutions</a>
+                    <a href="contact.html" class="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-accent text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <img src="./public/logo.jpeg" alt="Weyston Technology" class="h-8 w-auto mr-3">
+                    <div>
+                        <div class="font-bold">Weyston Technology</div>
+                        <div class="text-sm opacity-75">Professional Electronics Solutions Provider</div>
+                    </div>
+                </div>
+                <div class="text-sm opacity-75">
+                    <span>© 2024 Weyston Technology. All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/common.js"></script>
+</body>
+</html>

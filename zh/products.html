@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品 - 纬思通科技产品解决方案</title>
+
+    <meta name="description" content="探索我们全面的电子产品系列：AI录音设备、TWS蓝牙耳机、蓝牙音箱和电子烟解决方案。提供专业开发和技术支持。">
+
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="AI录音卡,录音豆,TWS蓝牙耳机,蓝牙音箱,电子烟,无线音频,智能录音,电子烟技术,音频解决方案,电子产品,产品开发,技术支持">
+
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="电子产品 - 纬思通科技解决方案">
+    <meta property="og:description" content="专业电子产品包括AI录音设备、无线音频解决方案和创新电子烟技术">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://weyston.com/zh/products.html">
+
+    <!-- Structured Data - Product Catalog -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "电子产品目录",
+      "description": "纬思通科技专业电子产品和解决方案",
+      "itemListElement": [
+        {
+          "@type": "Product",
+          "position": 1,
+          "name": "AI录音设备",
+          "description": "先进的AI录音解决方案，具备智能降噪和智能功能",
+          "category": "录音设备",
+          "manufacturer": {
+            "@type": "Organization",
+            "name": "纬思通科技"
+          }
+        },
+        {
+          "@type": "Product",
+          "position": 2,
+          "name": "TWS蓝牙耳机",
+          "description": "真无线立体声耳机，具备优质音质和长续航",
+          "category": "无线音频",
+          "manufacturer": {
+            "@type": "Organization",
+            "name": "纬思通科技"
+          }
+        },
+        {
+          "@type": "Product",
+          "position": 3,
+          "name": "蓝牙音箱",
+          "description": "高保真无线音箱，具备丰富低音和优质音频体验",
+          "category": "音频设备",
+          "manufacturer": {
+            "@type": "Organization",
+            "name": "纬思通科技"
+          }
+        },
+        {
+          "@type": "Product",
+          "position": 4,
+          "name": "电子烟解决方案",
+          "description": "创新电子烟技术，具备安全功能和可定制选项",
+          "category": "电子烟技术",
+          "manufacturer": {
+            "@type": "Organization",
+            "name": "纬思通科技"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- 隐藏SEO内容 -->
+    <div style="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
+        <h2>电子产品 - 纬思通科技</h2>
+        <p>AI录音设备 录音豆 TWS蓝牙耳机 蓝牙音箱 电子烟 专业电子产品</p>
+        <p>纬思通科技 专业电子产品开发 无线音频解决方案 智能录音技术 电子烟技术 产品方案 技术支持 创新解决方案</p>
+        <p>音频技术 录音技术 无线技术 电子烟技术 产品开发 技术支持 专业团队 创新解决方案</p>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#042454',
+                        secondary: '#fbbf24',
+                        accent: '#374151',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Menu underline animation */
+        .menu-item {
+            position: relative;
+        }
+
+        .menu-item::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: #042454;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .menu-item:hover::after {
+            width: 100%;
+        }
+
+        .menu-item.active::after {
+            width: 100%;
+        }
+
+        /* Mobile menu left border animation */
+        .mobile-menu-item {
+            position: relative;
+        }
+
+        .mobile-menu-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 0;
+            height: 4px;
+            background-color: #042454;
+            transition: all 0.3s ease;
+            transform: translateY(-50%);
+        }
+
+        .mobile-menu-item:hover::before {
+            width: 4px;
+        }
+
+        .mobile-menu-item.active::before {
+            width: 4px;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html">
+                        <img src="../public/logo.jpeg" alt="纬思通科技 - 专业电子产品解决方案供应商" class="h-10 w-auto">
+                    </a>
+                    <div class="ml-3">
+                        <div class="text-primary font-bold text-lg">纬思通科技</div>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="menu-item text-accent hover:text-primary transition-colors">首页</a>
+                    <a href="products.html" class="menu-item active text-accent hover:text-primary transition-colors">产品</a>
+                    <a href="solutions.html" class="menu-item text-accent hover:text-primary transition-colors">方案</a>
+                    <a href="support.html" class="menu-item text-accent hover:text-primary transition-colors">技术支持</a>
+                    <a href="about.html" class="menu-item text-accent hover:text-primary transition-colors">关于我们</a>
+                    <a href="contact.html" class="menu-item text-accent hover:text-primary transition-colors">联系我们</a>
+
+                    <!-- Language Toggle -->
+                    <a href="../products.html" class="bg-primary text-white px-3 py-1 rounded-md text-sm hover:bg-accent transition-colors">
+                        EN
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobileMenuBtn" class="text-accent hover:text-primary">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="md:hidden hidden bg-white border-t">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="index.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">首页</a>
+                    <a href="products.html" class="mobile-menu-item active block px-3 py-2 text-accent hover:text-primary transition-colors">产品</a>
+                    <a href="solutions.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">方案</a>
+                    <a href="support.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">技术支持</a>
+                    <a href="about.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">关于我们</a>
+                    <a href="contact.html" class="mobile-menu-item block px-3 py-2 text-accent hover:text-primary transition-colors">联系我们</a>
+                    <a href="../products.html" class="block w-full text-left px-3 py-2 bg-primary text-white rounded-md mt-2">
+                        EN
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="relative text-white py-16 overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="../public/products-components-bg.jpg"
+                 alt="电子产品背景"
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-gray-900/50 to-gray-800/50"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center relative z-10">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">我们的产品</h1>
+                <p class="text-xl opacity-90">现代应用的创新电子解决方案</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- AI Recording Devices -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img src="../public/ai-card.jpg"
+                             alt="AI录音设备"
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-primary mb-3">AI录音设备</h3>
+                        <p class="text-accent mb-4">先进的AI录音解决方案，具备智能降噪、语音增强和智能音频处理功能，适用于专业录音应用。</p>
+                        <ul class="text-sm text-gray-600 mb-6">
+                            <li>• AI智能降噪</li>
+                            <li>• 语音增强技术</li>
+                            <li>• 多格式录音支持</li>
+                            <li>• 紧凑便携设计</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs">AI录音卡</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs">录音豆</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TWS Bluetooth Earphones -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img src="../public/tws.jpg"
+                             alt="TWS蓝牙耳机"
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-primary mb-3">TWS蓝牙耳机</h3>
+                        <p class="text-accent mb-4">真无线立体声耳机，具备优质音质、主动降噪和长续航，提供卓越的音频体验。</p>
+                        <ul class="text-sm text-gray-600 mb-6">
+                            <li>• 真无线立体声技术</li>
+                            <li>• 主动降噪</li>
+                            <li>• 超长续航</li>
+                            <li>• 触控操作界面</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs">优质音频</span>
+                            <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-xs">无线自由</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bluetooth Speakers -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
+                        <img src="../public/ble-speaker.jpg"
+                             alt="蓝牙音箱"
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-primary mb-3">蓝牙音箱</h3>
+                        <p class="text-accent mb-4">高保真无线音箱，提供丰富低音和清晰音质，具备坚固的制造质量和多样化连接选项。</p>
+                        <ul class="text-sm text-gray-600 mb-6">
+                            <li>• 高保真音频输出</li>
+                            <li>• 丰富低音和清晰高音</li>
+                            <li>• 防水设计选项</li>
+                            <li>• 多设备连接</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-xs">高保真音质</span>
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs">便携设计</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- E-Cigarette Solutions -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gray-101 flex items-center justify-center overflow-hidden">
+                        <img src="../public/e-cigarette.jpg"
+                             alt="电子烟解决方案"
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-primary mb-3">电子烟解决方案</h3>
+                        <p class="text-accent mb-4">创新的电子烟技术解决方案，具备先进的安全功能、可定制设置和可靠性能，适用于现代电子烟行业。</p>
+                        <ul class="text-sm text-gray-600 mb-6">
+                            <li>• 先进安全保护</li>
+                            <li>• 温控技术</li>
+                            <li>• 可定制功率设置</li>
+                            <li>• 持久电池续航</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs">安全第一</span>
+                            <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-xs">智能控制</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">产品特色</h2>
+                <p class="text-lg text-accent">我们的产品在市场中的突出优势</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">AI技术</h3>
+                    <p class="text-gray-600">先进人工智能技术提升性能</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">安全第一</h3>
+                    <p class="text-gray-600">全面的安全功能和保护系统</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-battery-full"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">长续航</h3>
+                    <p class="text-gray-600">高效电源管理实现超长使用时间</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">可定制</h3>
+                    <p class="text-gray-600">针对特定需求的灵活定制解决方案</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-primary mb-4">对我们的产品感兴趣？</h2>
+            <p class="text-lg text-accent mb-8">联系我们的团队，了解更多关于我们创新电子解决方案以及如何为您的业务带来益处</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="solutions.html" class="bg-primary text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-accent transition-colors inline-block">查看方案</a>
+                <a href="contact.html" class="bg-secondary text-primary px-8 py-3 rounded-lg text-lg font-semibold hover:bg-yellow-500 transition-colors inline-block">联系我们</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-accent text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <img src="../public/logo.jpeg" alt="纬思通科技" class="h-8 w-auto mr-3">
+                    <div>
+                        <div class="font-bold">纬思通科技</div>
+                        <div class="text-sm opacity-75">专业电子产品解决方案供应商</div>
+                    </div>
+                </div>
+                <div class="text-sm opacity-75">
+                    <span>© 2024 纬思通科技。保留所有权利。</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/common.js"></script>
+</body>
+</html>
